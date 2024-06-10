@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>HTTP Request</title>
+  </head>
+  <script>
+    async function getUserFromAPI() {
+      let response = await fetch("https://jsonplaceholder.typicode.com/users");
+      let data = await response.json();
+      let tr = "";
+      data.forEach((element) => {
+        console.log(element);
+        tr += `<tr>
+            <td>${element.name}</td>
+            <td>${element.email}</td>
+        </tr>`;
+      });
+      const tbody = document.getElementById("display-data");
+      tbody.innerHTML = tr;
+    }
+    getUserFromAPI();
+  </script>
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Email</td>
+      </tr>
+    </thead>
+    <tbody id="display-data"></tbody>
+  </table>
+</html>
