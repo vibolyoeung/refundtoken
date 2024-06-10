@@ -1,4 +1,5 @@
 {
   "LockModule#Lock": "0x4320F34b0fD97Ce1087A0ca3d025495a6e2ccEd0",
-  "RefundToken#RefundToken": "0x783c7dbc89cE98cEC12B7F365fA81920a9b4F806"
+  "RefundToken#RefundToken": "0x783c7dbc89cE98cEC12B7F365fA81920a9b4F806",
+  "ChildNaming#ChildNaming": "0x2A06058f4c3E6c0115d9709b78BFe200D8df613b"
 }
